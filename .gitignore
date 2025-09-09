@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+data/prospectuses/*.pdf
+data/prospectuses/*.html
+data/logs/*.log
+.pytest_cache/
+venv/
+.vscode/
+.DS_Store

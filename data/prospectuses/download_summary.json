@@ -1,0 +1,33 @@
+{
+  "downloads": [
+    {
+      "fund_symbol": "VUSXX",
+      "filing_date": "2025-04-29T00:00:00",
+      "download_timestamp": "2025-09-08T22:28:22.629601",
+      "form_type": "497K",
+      "file_path": "VUSXX/VUSXX_497K_20250429_000168386325004171.html",
+      "file_size": 114719,
+      "success": true
+    },
+    {
+      "fund_symbol": "VUSXX",
+      "filing_date": "2025-04-29T00:00:00",
+      "download_timestamp": "2025-09-08T22:29:43.076911",
+      "form_type": "497K",
+      "file_path": "VUSXX/VUSXX_497K_20250429_000168386325004171.html",
+      "file_size": 114719,
+      "success": true
+    },
+    {
+      "fund_symbol": "VUSXX",
+      "filing_date": "2025-04-29T00:00:00",
+      "download_timestamp": "2025-09-08T22:29:52.826902",
+      "form_type": "497K",
+      "file_path": "VUSXX/VUSXX_497K_20250429_000168386325004171.html",
+      "file_size": 114719,
+      "success": true
+    }
+  ],
+  "last_updated": "2025-09-08T22:29:52.826984",
+  "total_downloads": 3
+}
