@@ -130,6 +130,8 @@ class SECClient:
             for search_term in search_terms:
                 url = f"{self.data_api_url}/api/xbrl/companyconcept/CIK0000862084/us-gaap/Assets.json"
                 
+                # This is a simplified approach - in practice, you'd want a more robust search
+                # For VUSXX specifically, we can use Vanguard's known CIK
                 if fund_symbol.upper() == "VUSXX":
                     return "0000862084"  # Vanguard Group's CIK
             
