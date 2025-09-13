@@ -27,18 +27,23 @@ class SECClient:
         })
         self.logger = logging.getLogger(__name__)
     
-    def get_latest_prospectus(self, fund_symbol: str) -> Optional[ProspectusData]:
+    def get_latest_prospectus(self, fund_symbol: str, known_cik: str = None) -> Optional[ProspectusData]:
         """Retrieve the latest prospectus for a given fund symbol"""
         try:
             self.logger.info(f"Starting prospectus search for fund symbol: {fund_symbol}")
             
-            # Step 1: Find the CIK for the fund symbol
-            cik = self._find_cik_by_symbol(fund_symbol)
-            if not cik:
-                self.logger.error(f"Could not find CIK for fund symbol: {fund_symbol}")
-                return None
-            
-            self.logger.info(f"Found CIK {cik} for fund symbol {fund_symbol}")
+            # Step 1: Use provided CIK or find it
+            if known_cik:
+                cik = known_cik
+                self.logger.info(f"Using provided CIK {cik} for fund symbol {fund_symbol}")
+            else:
+                cik = self._find_cik_by_symbol(fund_symbol)
+                if not cik:
+                    self.logger.error(f"Could not find CIK for fund symbol: {fund_symbol}")
+                    return None
+                self.logger.info(f"Found CIK {cik} for fund symbol {fund_symbol}")
+
+                self.logger.info(f"Found CIK {cik} for fund symbol {fund_symbol}")
             
             # Step 2: Search for recent filings
             filings = self._search_edgar_filings(cik, fund_symbol)
@@ -92,6 +97,7 @@ class SECClient:
             if response.status_code == 200:
                 return fund_symbol.zfill(10)  # CIK is 10 digits, zero-padded
             
+            # If that fails, try searching through company tickers (corrected URL and data structure)
             tickers_url = "https://www.sec.gov/files/company_tickers_mf.json"
             
             self._rate_limit()
@@ -100,7 +106,7 @@ class SECClient:
             if response.status_code == 200:
                 tickers_data = response.json()
                 
-                
+                # Handle the correct data structure: {"fields": [...], "data": [...]}
                 if 'fields' in tickers_data and 'data' in tickers_data:
                     fields = tickers_data['fields']  # ["cik", "seriesId", "classId", "symbol"]
                     
@@ -117,7 +123,7 @@ class SECClient:
         except Exception as e:
             self.logger.error(f"Error finding CIK for {fund_symbol}: {str(e)}")
             return None
-            
+    
     def _search_cik_by_name(self, fund_symbol: str) -> Optional[str]:
         """Search for CIK using company name search (fallback method)"""
         try:

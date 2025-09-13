@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "QQQ",
+  "filing_date": "2025-07-17T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1067839/000206159025000114/497.htm",
+  "file_size": 4199,
+  "form_type": "497",
+  "cik": "0001067839",
+  "accession_number": "0002061590-25-000114",
+  "download_timestamp": "2025-09-13T02:01:45.782017",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/temp/fund-prospectus-retriever/data/prospectuses/QQQ/QQQ_497_20250717_000206159025000114.html",
+  "local_file_size": 4199,
+  "content_hash": "5d54346bfc5e20202feebef9af6eb0b3a9895887521afb4a6185b12735aa72f8"
+}
