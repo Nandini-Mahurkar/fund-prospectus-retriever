@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VGIAX",
+  "filing_date": "2025-01-31T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/799127/000168386325000470/f40521d1.htm",
+  "file_size": 102575,
+  "form_type": "497K",
+  "cik": "0000799127",
+  "accession_number": "0001683863-25-000470",
+  "download_timestamp": "2025-09-12T22:36:52.851103",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VGIAX/VGIAX_497K_20250131_000168386325000470.html",
+  "local_file_size": 102575,
+  "content_hash": "efb4a41f5ce062e3e7f9ff2c959b5221b93ef6fd71358b282e90b6a3f5bea081"
+}

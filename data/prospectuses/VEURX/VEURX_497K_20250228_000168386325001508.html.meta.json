@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VEURX",
+  "filing_date": "2025-02-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/857489/000168386325001508/f40783d1.htm",
+  "file_size": 112173,
+  "form_type": "497K",
+  "cik": "0000857489",
+  "accession_number": "0001683863-25-001508",
+  "download_timestamp": "2025-09-12T22:35:19.037840",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VEURX/VEURX_497K_20250228_000168386325001508.html",
+  "local_file_size": 112173,
+  "content_hash": "d429b82f95397ee8d212ba5e9d804be3aa5e3f1363a3aabf4a5bc781f7dcd0a3"
+}

@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VTLXX",
+  "filing_date": "2025-06-13T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1107414/000119312525140612/d52353d497k.htm",
+  "file_size": 9142,
+  "form_type": "497K",
+  "cik": "0001107414",
+  "accession_number": "0001193125-25-140612",
+  "download_timestamp": "2025-09-12T22:46:53.757033",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VTLXX/VTLXX_497K_20250613_000119312525140612.html",
+  "local_file_size": 9142,
+  "content_hash": "435b9fabe283f9a574f49859f3f84c2ab05e69395b32b948698225be08b6e328"
+}

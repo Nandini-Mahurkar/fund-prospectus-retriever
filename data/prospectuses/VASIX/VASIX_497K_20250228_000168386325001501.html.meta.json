@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VASIX",
+  "filing_date": "2025-02-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/736054/000168386325001501/f40723d1.htm",
+  "file_size": 96524,
+  "form_type": "497K",
+  "cik": "0000736054",
+  "accession_number": "0001683863-25-001501",
+  "download_timestamp": "2025-09-12T22:32:27.526793",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VASIX/VASIX_497K_20250228_000168386325001501.html",
+  "local_file_size": 96524,
+  "content_hash": "808189a78aecdba4767e0412126f87e848e5ff52037b77119dc8838703770b4b"
+}

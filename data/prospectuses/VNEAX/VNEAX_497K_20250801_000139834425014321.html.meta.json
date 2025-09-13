@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VNEAX",
+  "filing_date": "2025-08-01T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/890540/000139834425014321/fp0094738-2_497k.htm",
+  "file_size": 5198,
+  "form_type": "497K",
+  "cik": "0000890540",
+  "accession_number": "0001398344-25-014321",
+  "download_timestamp": "2025-09-12T22:41:50.883098",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VNEAX/VNEAX_497K_20250801_000139834425014321.html",
+  "local_file_size": 5198,
+  "content_hash": "34132cb9421ca1c19031b70bce3454d05b14f4bc9c6eb9996e0e115247dc4034"
+}

@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VMPYX",
+  "filing_date": "2025-09-12T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1081400/000108140025000488/realreturnfund.htm",
+  "file_size": 163664,
+  "form_type": "497K",
+  "cik": "0001081400",
+  "accession_number": "0001081400-25-000488",
+  "download_timestamp": "2025-09-12T22:41:30.537123",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VMPYX/VMPYX_497K_20250912_000108140025000488.html",
+  "local_file_size": 163664,
+  "content_hash": "45821c35df8c3c8f034bb55835bfd21892a4ddd0e7ea649199ac551df4cb2054"
+}

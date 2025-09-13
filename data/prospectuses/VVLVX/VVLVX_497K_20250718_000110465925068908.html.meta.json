@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VVLVX",
+  "filing_date": "2025-07-18T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1995745/000110465925068908/tm2521081d5_497k.htm",
+  "file_size": 16506,
+  "form_type": "497K",
+  "cik": "0001995745",
+  "accession_number": "0001104659-25-068908",
+  "download_timestamp": "2025-09-12T22:48:49.767320",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VVLVX/VVLVX_497K_20250718_000110465925068908.html",
+  "local_file_size": 16506,
+  "content_hash": "0405c920832687aa97d335db2e228271d99972f3d96cc636e993accabec447a7"
+}

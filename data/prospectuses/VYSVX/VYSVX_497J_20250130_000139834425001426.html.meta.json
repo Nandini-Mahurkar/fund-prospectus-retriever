@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VYSVX",
+  "filing_date": "2025-01-30T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1524968/000139834425001426/fp0091884-5_497j.htm",
+  "file_size": 3351,
+  "form_type": "497J",
+  "cik": "0001524968",
+  "accession_number": "0001398344-25-001426",
+  "download_timestamp": "2025-09-12T22:50:35.586067",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VYSVX/VYSVX_497J_20250130_000139834425001426.html",
+  "local_file_size": 3351,
+  "content_hash": "36591c7442772b6b6e67e036406e0e69cbabbd34bd0c5deb447aff7abd1a4f0d"
+}

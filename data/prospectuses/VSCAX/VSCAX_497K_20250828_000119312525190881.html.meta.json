@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VSCAX",
+  "filing_date": "2025-08-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/725781/000119312525190881/d24893d497k.htm",
+  "file_size": 203422,
+  "form_type": "497K",
+  "cik": "0000725781",
+  "accession_number": "0001193125-25-190881",
+  "download_timestamp": "2025-09-12T22:44:01.450483",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VSCAX/VSCAX_497K_20250828_000119312525190881.html",
+  "local_file_size": 203422,
+  "content_hash": "a6dcaea8d91955350c0ac1f9144076ebbbeb7984d7e99188d75cf28da1a77d0d"
+}

@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VEXPX",
+  "filing_date": "2025-02-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/34066/000168386325001451/f40797d1.htm",
+  "file_size": 104501,
+  "form_type": "497K",
+  "cik": "0000034066",
+  "accession_number": "0001683863-25-001451",
+  "download_timestamp": "2025-09-12T22:35:33.950800",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VEXPX/VEXPX_497K_20250228_000168386325001451.html",
+  "local_file_size": 104501,
+  "content_hash": "71522b605095acbbc18cb320d70be903dbaf4aa681fd0582ae70cfa9c61389ae"
+}

@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VEVRX",
+  "filing_date": "2025-08-29T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/802716/000168386325007176/f42782d1.htm",
+  "file_size": 18415,
+  "form_type": "497K",
+  "cik": "0000802716",
+  "accession_number": "0001683863-25-007176",
+  "download_timestamp": "2025-09-12T22:35:28.822741",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VEVRX/VEVRX_497K_20250829_000168386325007176.html",
+  "local_file_size": 18415,
+  "content_hash": "7609ada5f7e0e4154f1fa4d3a536f182dcececda8bd0ddcef7d845f8ad1c96a9"
+}

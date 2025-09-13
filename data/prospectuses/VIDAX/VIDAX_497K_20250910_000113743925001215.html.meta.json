@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VIDAX",
+  "filing_date": "2025-09-10T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/906236/000113743925001215/macqurie09102025497.htm",
+  "file_size": 17140,
+  "form_type": "497K",
+  "cik": "0000906236",
+  "accession_number": "0001137439-25-001215",
+  "download_timestamp": "2025-09-12T22:38:10.025676",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VIDAX/VIDAX_497K_20250910_000113743925001215.html",
+  "local_file_size": 17140,
+  "content_hash": "01a2793f905f217605c07dbb4522718bde06dba7071f3ecf3408063b2c07e1ac"
+}

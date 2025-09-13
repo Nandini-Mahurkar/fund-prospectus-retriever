@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VGSIX",
+  "filing_date": "2025-05-29T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/734383/000168386325004875/f42158d1.htm",
+  "file_size": 104962,
+  "form_type": "497K",
+  "cik": "0000734383",
+  "accession_number": "0001683863-25-004875",
+  "download_timestamp": "2025-09-12T22:37:26.072681",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VGSIX/VGSIX_497K_20250529_000168386325004875.html",
+  "local_file_size": 104962,
+  "content_hash": "483d08d16a449459353ea301fb85904f4946fd75ae97845afa9e250eac8845c9"
+}

@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VLEIX",
+  "filing_date": "2025-05-01T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/895429/000110465925042958/tm253752d6_497k.htm",
+  "file_size": 83781,
+  "form_type": "497K",
+  "cik": "0000895429",
+  "accession_number": "0001104659-25-042958",
+  "download_timestamp": "2025-09-12T22:40:01.481664",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VLEIX/VLEIX_497K_20250501_000110465925042958.html",
+  "local_file_size": 83781,
+  "content_hash": "337311fd0a92f2361a6d0ce9bc008604aa80903157af45b6cc54a87d8d0ee531"
+}

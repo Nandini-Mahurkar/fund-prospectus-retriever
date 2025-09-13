@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VUSCX",
+  "filing_date": "2025-06-23T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/202032/000110465925061541/tm2517463d16_497k.htm",
+  "file_size": 22465,
+  "form_type": "497K",
+  "cik": "0000202032",
+  "accession_number": "0001104659-25-061541",
+  "download_timestamp": "2025-09-12T22:48:06.514280",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VUSCX/VUSCX_497K_20250623_000110465925061541.html",
+  "local_file_size": 22465,
+  "content_hash": "c40d4097b32454bbf9491ba593fbc2faebf96f3ffb61b73f9c8be30b9c619496"
+}

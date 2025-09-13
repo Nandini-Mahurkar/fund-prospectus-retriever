@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VILLX",
+  "filing_date": "2025-09-12T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/811030/000089418925006912/muzinich497k-changeinpm920.htm",
+  "file_size": 10796,
+  "form_type": "497K",
+  "cik": "0000811030",
+  "accession_number": "0000894189-25-006912",
+  "download_timestamp": "2025-09-12T22:38:36.398633",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VILLX/VILLX_497K_20250912_000089418925006912.html",
+  "local_file_size": 10796,
+  "content_hash": "dd49b28d6b29f20e0a365dd5dd33cbd68fc0372cf73e1f05ff3e9052323fe544"
+}

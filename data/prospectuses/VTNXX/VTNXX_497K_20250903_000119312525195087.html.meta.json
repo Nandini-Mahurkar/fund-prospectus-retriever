@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VTNXX",
+  "filing_date": "2025-09-03T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/822977/000119312525195087/d477478d497k.htm",
+  "file_size": 6548,
+  "form_type": "497K",
+  "cik": "0000822977",
+  "accession_number": "0001193125-25-195087",
+  "download_timestamp": "2025-09-12T22:47:02.557316",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VTNXX/VTNXX_497K_20250903_000119312525195087.html",
+  "local_file_size": 6548,
+  "content_hash": "477ec9a1a04195242c8956f9b6d1a276be62687e21e954e9b01c730e469c384f"
+}

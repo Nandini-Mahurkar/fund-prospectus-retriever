@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VALAX",
+  "filing_date": "2025-08-06T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1518042/000158064225004909/weitzmultisector497k.htm",
+  "file_size": 66659,
+  "form_type": "497K",
+  "cik": "0001518042",
+  "accession_number": "0001580642-25-004909",
+  "download_timestamp": "2025-09-12T22:32:05.459392",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VALAX/VALAX_497K_20250806_000158064225004909.html",
+  "local_file_size": 66659,
+  "content_hash": "e98f46905fae72d510b76b74858dc2c605d4e71a1574df7bfd4a2d4739209c06"
+}

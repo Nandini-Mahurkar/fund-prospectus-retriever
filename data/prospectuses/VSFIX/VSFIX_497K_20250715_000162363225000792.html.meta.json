@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VSFIX",
+  "filing_date": "2025-07-15T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/745968/000162363225000792/fcsvfcombproq457051edg.htm",
+  "file_size": 6909,
+  "form_type": "497K",
+  "cik": "0000745968",
+  "accession_number": "0001623632-25-000792",
+  "download_timestamp": "2025-09-12T22:44:25.477756",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VSFIX/VSFIX_497K_20250715_000162363225000792.html",
+  "local_file_size": 6909,
+  "content_hash": "d425793af32bd20adfcf54c1411edafef551407927ae726e57b306500e01cb68"
+}

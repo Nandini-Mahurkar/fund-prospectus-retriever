@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VALSX",
+  "filing_date": "2025-05-01T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/102767/000110465925042942/tm253754d6_497k.htm",
+  "file_size": 83409,
+  "form_type": "497K",
+  "cik": "0000102767",
+  "accession_number": "0001104659-25-042942",
+  "download_timestamp": "2025-09-12T22:32:10.654876",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VALSX/VALSX_497K_20250501_000110465925042942.html",
+  "local_file_size": 83409,
+  "content_hash": "f5a3edc0a402acddbd013d307e97dd1dab4facf8f70347076b57c7a05c487c75"
+}

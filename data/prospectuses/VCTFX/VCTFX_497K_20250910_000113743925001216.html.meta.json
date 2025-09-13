@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VCTFX",
+  "filing_date": "2025-09-10T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/809872/000113743925001216/macqurie09102025497.htm",
+  "file_size": 17140,
+  "form_type": "497K",
+  "cik": "0000809872",
+  "accession_number": "0001137439-25-001216",
+  "download_timestamp": "2025-09-12T22:34:13.744701",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VCTFX/VCTFX_497K_20250910_000113743925001216.html",
+  "local_file_size": 17140,
+  "content_hash": "01a2793f905f217605c07dbb4522718bde06dba7071f3ecf3408063b2c07e1ac"
+}

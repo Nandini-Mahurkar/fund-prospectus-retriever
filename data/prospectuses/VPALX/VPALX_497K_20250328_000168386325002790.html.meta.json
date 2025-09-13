@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VPALX",
+  "filing_date": "2025-03-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/788606/000168386325002790/f41180d1.htm",
+  "file_size": 116120,
+  "form_type": "497K",
+  "cik": "0000788606",
+  "accession_number": "0001683863-25-002790",
+  "download_timestamp": "2025-09-12T22:42:42.860652",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VPALX/VPALX_497K_20250328_000168386325002790.html",
+  "local_file_size": 116120,
+  "content_hash": "8eed13c24243644e853b7ad990ed7302c8ed0dd1235895f7471112f0c5d052cb"
+}

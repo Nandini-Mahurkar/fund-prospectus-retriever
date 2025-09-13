@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VBLLX",
+  "filing_date": "2025-04-29T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/794105/000168386325004180/f41952d1.htm",
+  "file_size": 105495,
+  "form_type": "497K",
+  "cik": "0000794105",
+  "accession_number": "0001683863-25-004180",
+  "download_timestamp": "2025-09-12T22:33:00.046029",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VBLLX/VBLLX_497K_20250429_000168386325004180.html",
+  "local_file_size": 105495,
+  "content_hash": "21ff60dcd3a2c14ed2f59f3a94fd9226c6e5a1d5941dc8e51089992138e78a08"
+}

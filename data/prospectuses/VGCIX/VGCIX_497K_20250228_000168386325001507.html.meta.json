@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VGCIX",
+  "filing_date": "2025-02-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1532203/000168386325001507/f40769d1.htm",
+  "file_size": 107057,
+  "form_type": "497K",
+  "cik": "0001532203",
+  "accession_number": "0001683863-25-001507",
+  "download_timestamp": "2025-09-12T22:36:36.797122",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VGCIX/VGCIX_497K_20250228_000168386325001507.html",
+  "local_file_size": 107057,
+  "content_hash": "868470fcb21c148f65f02171c5bc2125a05141fe954849b2c0c46d036902b79f"
+}

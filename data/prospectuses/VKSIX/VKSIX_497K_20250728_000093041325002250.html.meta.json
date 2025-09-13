@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VKSIX",
+  "filing_date": "2025-07-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/34273/000093041325002250/c113524_497k.htm",
+  "file_size": 125719,
+  "form_type": "497K",
+  "cik": "0000034273",
+  "accession_number": "0000930413-25-002250",
+  "download_timestamp": "2025-09-12T22:39:46.326272",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VKSIX/VKSIX_497K_20250728_000093041325002250.html",
+  "local_file_size": 125719,
+  "content_hash": "ae02fbb0c01fc4cd6852739b65d710884a59e2649450ce6c47d7f91592001afc"
+}

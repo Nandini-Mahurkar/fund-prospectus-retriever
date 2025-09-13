@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VSIPX",
+  "filing_date": "2025-04-30T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1039001/000168386325004338/f41791d1.htm",
+  "file_size": 325590,
+  "form_type": "497K",
+  "cik": "0001039001",
+  "accession_number": "0001683863-25-004338",
+  "download_timestamp": "2025-09-12T22:44:49.937757",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VSIPX/VSIPX_497K_20250430_000168386325004338.html",
+  "local_file_size": 325590,
+  "content_hash": "6b80e8b3ab23b938c375d99264233fcc8c48c5701aa07129603625141a4fdc4d"
+}

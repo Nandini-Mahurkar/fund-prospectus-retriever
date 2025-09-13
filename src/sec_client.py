@@ -92,7 +92,6 @@ class SECClient:
             if response.status_code == 200:
                 return fund_symbol.zfill(10)  # CIK is 10 digits, zero-padded
             
-            # If that fails, try searching through company tickers ( URL and data structure)
             tickers_url = "https://www.sec.gov/files/company_tickers_mf.json"
             
             self._rate_limit()
@@ -101,7 +100,7 @@ class SECClient:
             if response.status_code == 200:
                 tickers_data = response.json()
                 
-                # Handle the = data structure: {"fields": [...], "data": [...]}
+                
                 if 'fields' in tickers_data and 'data' in tickers_data:
                     fields = tickers_data['fields']  # ["cik", "seriesId", "classId", "symbol"]
                     
@@ -118,7 +117,7 @@ class SECClient:
         except Exception as e:
             self.logger.error(f"Error finding CIK for {fund_symbol}: {str(e)}")
             return None
-    
+            
     def _search_cik_by_name(self, fund_symbol: str) -> Optional[str]:
         """Search for CIK using company name search (fallback method)"""
         try:
