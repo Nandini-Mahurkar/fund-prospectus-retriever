@@ -9854,9 +9854,105 @@
       "document_type": "HTML",
       "cik": "0000932471",
       "accession_number": "0001683863-25-000469"
+    },
+    {
+      "fund_symbol": "SPY",
+      "filing_date": "2025-01-28T00:00:00",
+      "download_timestamp": "2025-09-13T01:42:42.346388",
+      "form_type": "497",
+      "file_path": "SPY/SPY_497_20250128_000119312525014030.html",
+      "file_size": 1163048,
+      "success": true,
+      "document_type": "HTML",
+      "cik": "0000884394",
+      "accession_number": "0001193125-25-014030"
+    },
+    {
+      "fund_symbol": "QQQ",
+      "filing_date": "2025-01-28T00:00:00",
+      "download_timestamp": "2025-09-13T01:52:12.745554",
+      "form_type": "497",
+      "file_path": "QQQ/QQQ_497_20250128_000119312525014030.html",
+      "file_size": 1163048,
+      "success": true,
+      "document_type": "HTML",
+      "cik": "0000884394",
+      "accession_number": "0001193125-25-014030"
+    },
+    {
+      "fund_symbol": "UNKNOWN1",
+      "filing_date": "2025-01-28T00:00:00",
+      "download_timestamp": "2025-09-13T01:52:14.225629",
+      "form_type": "497",
+      "file_path": "UNKNOWN1/UNKNOWN1_497_20250128_000119312525014030.html",
+      "file_size": 1163048,
+      "success": true,
+      "document_type": "HTML",
+      "cik": "0000884394",
+      "accession_number": "0001193125-25-014030"
+    },
+    {
+      "fund_symbol": "FUND123",
+      "filing_date": "2025-01-28T00:00:00",
+      "download_timestamp": "2025-09-13T01:52:15.407392",
+      "form_type": "497",
+      "file_path": "FUND123/FUND123_497_20250128_000119312525014030.html",
+      "file_size": 1163048,
+      "success": true,
+      "document_type": "HTML",
+      "cik": "0000884394",
+      "accession_number": "0001193125-25-014030"
+    },
+    {
+      "fund_symbol": "AAPL",
+      "filing_date": "2025-01-28T00:00:00",
+      "download_timestamp": "2025-09-13T01:52:16.635412",
+      "form_type": "497",
+      "file_path": "AAPL/AAPL_497_20250128_000119312525014030.html",
+      "file_size": 1163048,
+      "success": true,
+      "document_type": "HTML",
+      "cik": "0000884394",
+      "accession_number": "0001193125-25-014030"
+    },
+    {
+      "fund_symbol": "RANDOM",
+      "filing_date": "2025-01-28T00:00:00",
+      "download_timestamp": "2025-09-13T01:52:17.763483",
+      "form_type": "497",
+      "file_path": "RANDOM/RANDOM_497_20250128_000119312525014030.html",
+      "file_size": 1163048,
+      "success": true,
+      "document_type": "HTML",
+      "cik": "0000884394",
+      "accession_number": "0001193125-25-014030"
+    },
+    {
+      "fund_symbol": "SPY",
+      "filing_date": "2025-01-28T00:00:00",
+      "download_timestamp": "2025-09-13T02:01:43.550552",
+      "form_type": "497",
+      "file_path": "SPY/SPY_497_20250128_000119312525014030.html",
+      "file_size": 1163048,
+      "success": true,
+      "document_type": "HTML",
+      "cik": "0000884394",
+      "accession_number": "0001193125-25-014030"
+    },
+    {
+      "fund_symbol": "QQQ",
+      "filing_date": "2025-07-17T00:00:00",
+      "download_timestamp": "2025-09-13T02:01:45.784808",
+      "form_type": "497",
+      "file_path": "QQQ/QQQ_497_20250717_000206159025000114.html",
+      "file_size": 4199,
+      "success": true,
+      "document_type": "HTML",
+      "cik": "0001067839",
+      "accession_number": "0002061590-25-000114"
     }
   ],
-  "last_updated": "2025-09-12T22:50:41.236753",
-  "total_downloads": 822,
+  "last_updated": "2025-09-13T02:01:45.785039",
+  "total_downloads": 830,
   "checkpoints_completed": []
 }

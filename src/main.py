@@ -3,6 +3,7 @@
 Main entry point for fund prospectus retrieval.
 Checkpoint 1: Single fund retrieval for VUSXX.
 Checkpoint 2: Multiple Vanguard funds batch processing.
+Checkpoint 3: Arbitrary fund retrieval (any fund symbol).
 """
 
 import argparse
@@ -17,11 +18,11 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from config.settings import settings
 from src.sec_client import SECClient
 from src.file_handler import FileHandler
-from src.vanguard_processor import VanguardFundProcessor
+from src.generic_fund_processor import GenericFundProcessor
 from src.utils import setup_logging, validate_fund_symbol, normalize_fund_symbol
 
 def main():
-    """Main function supporting both single fund and batch processing"""
+    """Main function supporting single fund, batch Vanguard, and arbitrary fund processing"""
     # Parse command line arguments
     parser = argparse.ArgumentParser(
         description='Retrieve fund prospectuses from SEC EDGAR',
@@ -34,8 +35,15 @@ Examples:
   # Checkpoint 2: All Vanguard funds
   python src/main.py --batch-vanguard
   
-  # Checkpoint 2: Limited batch for testing
-  python src/main.py --batch-vanguard --max-funds 10
+  # Checkpoint 3: Single arbitrary fund
+  python src/main.py --arbitrary SPY
+  python src/main.py --arbitrary QQQ
+  
+  # Checkpoint 3: Multiple arbitrary funds
+  python src/main.py --arbitrary-batch SPY QQQ IWM VTI
+  
+  # Mixed processing
+  python src/main.py --arbitrary-batch SPY QQQ --max-funds 10
         """
     )
     
@@ -45,6 +53,10 @@ Examples:
                            help='Single fund symbol to retrieve (Checkpoint 1)')
     mode_group.add_argument('--batch-vanguard', action='store_true',
                            help='Process all Vanguard mutual funds (Checkpoint 2)')
+    mode_group.add_argument('--arbitrary', 
+                           help='Single arbitrary fund symbol (Checkpoint 3)')
+    mode_group.add_argument('--arbitrary-batch', nargs='+', metavar='SYMBOL',
+                           help='Multiple arbitrary fund symbols (Checkpoint 3)')
     
     # Batch processing options
     parser.add_argument('--max-funds', type=int, 
@@ -63,7 +75,7 @@ Examples:
     args = parser.parse_args()
     
     # Default to VUSXX if no mode specified
-    if not args.symbol and not args.batch_vanguard:
+    if not any([args.symbol, args.batch_vanguard, args.arbitrary, args.arbitrary_batch]):
         args.symbol = 'VUSXX'
     
     # Setup
@@ -82,17 +94,23 @@ Examples:
         if args.batch_vanguard:
             # Checkpoint 2: Batch processing mode
             run_batch_processing(args, logger)
+        elif args.arbitrary:
+            # Checkpoint 3: Single arbitrary fund
+            run_arbitrary_fund_processing(args, logger, [args.arbitrary])
+        elif args.arbitrary_batch:
+            # Checkpoint 3: Multiple arbitrary funds
+            run_arbitrary_fund_processing(args, logger, args.arbitrary_batch)
         else:
             # Checkpoint 1: Single fund mode
             run_single_fund_processing(args, logger)
             
     except KeyboardInterrupt:
         logger.info("Operation cancelled by user")
-        print("\n Operation cancelled")
+        print("\nOperation cancelled")
         sys.exit(0)
     except Exception as e:
         logger.error(f"Unexpected error: {str(e)}", exc_info=True)
-        print(f"\n💥 Error: {str(e)}")
+        print(f"\nError: {str(e)}")
         print("Check the logs for more details.")
         sys.exit(1)
 
@@ -120,12 +138,12 @@ def run_single_fund_processing(args, logger):
             if metadata:
                 logger.info(f"Existing file date: {metadata.get('filing_date')}")
                 if not args.force:
-                    print(f" Prospectus for {fund_symbol} already exists: {existing_file}")
+                    print(f"Prospectus for {fund_symbol} already exists: {existing_file}")
                     print("Use --force to re-download")
                     return
     
     if args.dry_run:
-        print(f"🔍 Would retrieve prospectus for: {fund_symbol}")
+        print(f"Would retrieve prospectus for: {fund_symbol}")
         return
     
     # Retrieve prospectus
@@ -153,14 +171,14 @@ def run_single_fund_processing(args, logger):
         logger.info(f"Accession Number: {prospectus_data.accession_number}")
         logger.info(f"Total time: {duration:.2f} seconds")
         
-        print(f"\n Successfully retrieved and saved prospectus for {fund_symbol}")
-        print(f" Saved to: {saved_path}")
-        print(f" File size: {len(prospectus_data.content):,} bytes")
-        print(f" Filing date: {prospectus_data.filing_date.strftime('%Y-%m-%d')}")
+        print(f"\nSuccessfully retrieved and saved prospectus for {fund_symbol}")
+        print(f"Saved to: {saved_path}")
+        print(f"File size: {len(prospectus_data.content):,} bytes")
+        print(f"Filing date: {prospectus_data.filing_date.strftime('%Y-%m-%d')}")
         
     else:
         logger.error(f"Failed to retrieve prospectus for {fund_symbol}")
-        print(f"\n Failed to retrieve prospectus for {fund_symbol}")
+        print(f"\nFailed to retrieve prospectus for {fund_symbol}")
         print("Check the logs for more details.")
         sys.exit(1)
 
@@ -168,7 +186,7 @@ def run_batch_processing(args, logger):
     """Run batch processing for all Vanguard funds (Checkpoint 2)"""
     logger.info("=== Starting Vanguard batch processing (Checkpoint 2) ===")
     
-    # Initialize batch processor (creates its own sec_client internally)
+    # Initialize batch processor
     processor = VanguardFundProcessor()
     
     try:
@@ -178,7 +196,7 @@ def run_batch_processing(args, logger):
             if args.max_funds:
                 vanguard_funds = vanguard_funds[:args.max_funds]
             
-            print(f"\n DRY RUN: Would process {len(vanguard_funds)} Vanguard funds:")
+            print(f"\nDRY RUN: Would process {len(vanguard_funds)} Vanguard funds:")
             for i, fund in enumerate(vanguard_funds[:20], 1):  # Show first 20
                 print(f"  {i:3d}. {fund.ticker:6s} - {fund.title}")
             if len(vanguard_funds) > 20:
@@ -202,7 +220,7 @@ def run_batch_processing(args, logger):
         skipped = [r for r in results if r.success and r.error_message and "already exists" in r.error_message]
         
         print(f"\nBATCH PROCESSING COMPLETED")
-        print(f" Total time: {total_duration:.1f} seconds")
+        print(f"Total time: {total_duration:.1f} seconds")
         print(f"Results:")
         print(f"Successfully downloaded: {len(successful)} funds")
         print(f"Skipped (already exist): {len(skipped)} funds")
@@ -213,19 +231,133 @@ def run_batch_processing(args, logger):
             total_size = sum(r.file_size or 0 for r in successful)
             print(f"Total data downloaded: {processor._format_file_size(total_size)}")
         
-        print(f"\n Detailed results saved to: data/prospectuses/vanguard_batch_results.json")
-        print(f" Prospectuses saved in: data/prospectuses/[TICKER]/")
+        print(f"\nDetailed results saved to: data/prospectuses/vanguard_batch_results.json")
+        print(f"Prospectuses saved in: data/prospectuses/[TICKER]/")
         
         if failed and len(failed) <= 10:
-            print(f"\n Failed funds:")
+            print(f"\nFailed funds:")
             for result in failed:
                 print(f"   • {result.fund.ticker}: {result.error_message}")
         elif failed:
-            print(f"\n {len(failed)} funds failed - see detailed logs for more information")
+            print(f"\n{len(failed)} funds failed - see detailed logs for more information")
         
     except Exception as e:
         logger.error(f"Batch processing failed: {str(e)}", exc_info=True)
         print(f"\nBatch processing failed: {str(e)}")
+        print("Check the logs for more details.")
+        sys.exit(1)
+
+def run_arbitrary_fund_processing(args, logger, fund_symbols):
+    """Run arbitrary fund processing (Checkpoint 3)"""
+    logger.info(f"=== Starting arbitrary fund processing (Checkpoint 3) ===")
+    
+    # Initialize generic processor
+    processor = GenericFundProcessor()
+    
+    try:
+        if args.dry_run:
+            print(f"\nDRY RUN: Would process {len(fund_symbols)} arbitrary fund(s):")
+            for i, symbol in enumerate(fund_symbols, 1):
+                print(f"  {i:3d}. {symbol}")
+            print(f"\nFunds will be processed using multiple discovery strategies:")
+            print(f"  1. SEC mutual fund tickers JSON")
+            print(f"  2. Known ETF patterns and providers")
+            print(f"  3. Direct CIK lookup")
+            print(f"  4. SEC entity search")
+            print(f"  5. Web-based lookup")
+            print(f"  6. Expanded pattern matching")
+            print(f"  7. Brute force search")
+            print(f"  8. Generic fund creation (last resort)")
+            return
+        
+        if len(fund_symbols) == 1:
+            # Single fund processing
+            symbol = fund_symbols[0]
+            start_time = datetime.now()
+            
+            # Check existing file
+            if args.skip_existing:
+                existing_file = processor.file_handler.get_existing_prospectus(symbol)
+                if existing_file:
+                    print(f"Prospectus for {symbol} already exists: {existing_file}")
+                    print("Use --force to re-download")
+                    return
+            
+            result = processor.retrieve_fund_prospectus(symbol)
+            
+            end_time = datetime.now()
+            duration = (end_time - start_time).total_seconds()
+            
+            if result.success:
+                print(f"\nSuccessfully retrieved prospectus for {symbol}")
+                print(f"Provider: {result.fund.provider or 'Unknown'}")
+                print(f"Fund Type: {result.fund.fund_type or 'Unknown'}")
+                print(f"Discovery Method: {result.discovery_method or 'Unknown'}")
+                print(f"Saved to: {result.file_path}")
+                print(f"File size: {result.file_size:,} bytes")
+                print(f"Form type: {result.form_type}")
+                print(f"Filing date: {result.filing_date.strftime('%Y-%m-%d') if result.filing_date else 'Unknown'}")
+                print(f"Processing time: {duration:.2f} seconds")
+            else:
+                print(f"\nFailed to retrieve prospectus for {symbol}")
+                print(f"Error: {result.error_message}")
+                print(f"Category: {result.error_category}")
+                print("Check the logs for more details.")
+                sys.exit(1)
+        
+        else:
+            # Multiple funds batch processing
+            if args.max_funds:
+                fund_symbols = fund_symbols[:args.max_funds]
+                logger.info(f"Limited to first {args.max_funds} funds for testing")
+            
+            start_time = datetime.now()
+            results = processor.process_multiple_funds(fund_symbols, args.skip_existing)
+            
+            end_time = datetime.now()
+            total_duration = (end_time - start_time).total_seconds()
+            
+            # Generate summary
+            successful = [r for r in results if r.success and not (r.error_message and "already exists" in r.error_message)]
+            failed = [r for r in results if not r.success]
+            skipped = [r for r in results if r.success and r.error_message and "already exists" in r.error_message]
+            
+            print(f"\nARBITRARY FUND BATCH PROCESSING COMPLETED")
+            print(f"Total time: {total_duration:.1f} seconds")
+            print(f"Results:")
+            print(f"Successfully downloaded: {len(successful)} funds")
+            print(f"Skipped (already exist): {len(skipped)} funds")
+            print(f"Failed: {len(failed)} funds")
+            print(f"Success rate: {(len(successful) / len(results) * 100):.1f}%")
+            
+            if successful:
+                total_size = sum(r.file_size or 0 for r in successful)
+                print(f"Total data downloaded: {processor._format_file_size(total_size)}")
+            
+            # Show discovery method breakdown
+            discovery_methods = {}
+            for result in successful:
+                method = result.discovery_method or "Unknown"
+                discovery_methods[method] = discovery_methods.get(method, 0) + 1
+            
+            if discovery_methods:
+                print(f"\nDiscovery methods used:")
+                for method, count in discovery_methods.items():
+                    print(f"  {method}: {count} funds")
+            
+            print(f"\nDetailed results saved to: data/prospectuses/arbitrary_batch_results.json")
+            print(f"Prospectuses saved in: data/prospectuses/[TICKER]/")
+            
+            if failed and len(failed) <= 10:
+                print(f"\nFailed funds:")
+                for result in failed:
+                    print(f"   • {result.fund.ticker}: {result.error_message} ({result.error_category})")
+            elif failed:
+                print(f"\n{len(failed)} funds failed - see detailed logs for more information")
+        
+    except Exception as e:
+        logger.error(f"Arbitrary fund processing failed: {str(e)}", exc_info=True)
+        print(f"\nArbitrary fund processing failed: {str(e)}")
         print("Check the logs for more details.")
         sys.exit(1)
 

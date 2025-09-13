@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "SPY",
+  "filing_date": "2025-01-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/884394/000119312525014030/d912756d497.htm",
+  "file_size": 1163048,
+  "form_type": "497",
+  "cik": "0000884394",
+  "accession_number": "0001193125-25-014030",
+  "download_timestamp": "2025-09-13T02:01:43.545056",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/temp/fund-prospectus-retriever/data/prospectuses/SPY/SPY_497_20250128_000119312525014030.html",
+  "local_file_size": 1163048,
+  "content_hash": "417219bc90599e8f4f7634d56f389dfe2f92bdc4c7cd4d3e44b341214152fe4f"
+}
