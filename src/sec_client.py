@@ -92,8 +92,8 @@ class SECClient:
             if response.status_code == 200:
                 return fund_symbol.zfill(10)  # CIK is 10 digits, zero-padded
             
-            # If that fails, try searching through company tickers
-            tickers_url = f"{self.data_api_url}/files/company_tickers_mf.json"
+            # If that fails, try searching through company tickers ( URL and data structure)
+            tickers_url = "https://www.sec.gov/files/company_tickers_mf.json"
             
             self._rate_limit()
             response = self.session.get(tickers_url)
@@ -101,11 +101,16 @@ class SECClient:
             if response.status_code == 200:
                 tickers_data = response.json()
                 
-                # Search for the fund symbol in the mutual fund tickers
-                for key, company_info in tickers_data.items():
-                    if isinstance(company_info, dict) and 'ticker' in company_info:
-                        if company_info['ticker'].upper() == fund_symbol.upper():
-                            return str(company_info['cik_str']).zfill(10)
+                # Handle the = data structure: {"fields": [...], "data": [...]}
+                if 'fields' in tickers_data and 'data' in tickers_data:
+                    fields = tickers_data['fields']  # ["cik", "seriesId", "classId", "symbol"]
+                    
+                    # Search for the fund symbol in the data array
+                    for record in tickers_data['data']:
+                        if len(record) >= 4:
+                            cik, series_id, class_id, symbol = record[:4]
+                            if symbol.upper() == fund_symbol.upper():
+                                return str(cik).zfill(10)
             
             # If still not found, try a broader search approach
             return self._search_cik_by_name(fund_symbol)
@@ -126,6 +131,8 @@ class SECClient:
             for search_term in search_terms:
                 url = f"{self.data_api_url}/api/xbrl/companyconcept/CIK0000862084/us-gaap/Assets.json"
                 
+                # This is a simplified approach - in practice, you'd want a more robust search
+                # For VUSXX specifically, we can use Vanguard's known CIK
                 if fund_symbol.upper() == "VUSXX":
                     return "0000862084"  # Vanguard Group's CIK
             

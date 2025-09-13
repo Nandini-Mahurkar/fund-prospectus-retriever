@@ -26,8 +26,35 @@
       "file_path": "VUSXX/VUSXX_497K_20250429_000168386325004171.html",
       "file_size": 114719,
       "success": true
+    },
+    {
+      "fund_symbol": "VUSXX",
+      "filing_date": "2024-12-20T00:00:00",
+      "download_timestamp": "2025-09-12T22:13:20.761338",
+      "form_type": "497K",
+      "file_path": "VUSXX/VUSXX_497K_20241220_000168386324009424.html",
+      "file_size": 73782,
+      "success": true
+    },
+    {
+      "fund_symbol": "VTSAX",
+      "filing_date": "2025-04-29T00:00:00",
+      "download_timestamp": "2025-09-12T22:13:33.418899",
+      "form_type": "497K",
+      "file_path": "VTSAX/VTSAX_497K_20250429_000168386325004177.html",
+      "file_size": 88439,
+      "success": true
+    },
+    {
+      "fund_symbol": "VTIAX",
+      "filing_date": "2025-02-28T00:00:00",
+      "download_timestamp": "2025-09-12T22:13:35.009893",
+      "form_type": "497K",
+      "file_path": "VTIAX/VTIAX_497K_20250228_000168386325001501.html",
+      "file_size": 96524,
+      "success": true
     }
   ],
-  "last_updated": "2025-09-08T22:29:52.826984",
-  "total_downloads": 3
+  "last_updated": "2025-09-12T22:13:35.010205",
+  "total_downloads": 6
 }
