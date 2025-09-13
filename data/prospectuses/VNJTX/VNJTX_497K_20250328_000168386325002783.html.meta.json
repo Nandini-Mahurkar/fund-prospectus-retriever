@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VNJTX",
+  "filing_date": "2025-03-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/821404/000168386325002783/f41056d1.htm",
+  "file_size": 116049,
+  "form_type": "497K",
+  "cik": "0000821404",
+  "accession_number": "0001683863-25-002783",
+  "download_timestamp": "2025-09-12T22:42:02.928608",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VNJTX/VNJTX_497K_20250328_000168386325002783.html",
+  "local_file_size": 116049,
+  "content_hash": "0c2cf0d1caa3d729eee6194a96583a69839cf673cd4d480dc6de8f81fe780329"
+}

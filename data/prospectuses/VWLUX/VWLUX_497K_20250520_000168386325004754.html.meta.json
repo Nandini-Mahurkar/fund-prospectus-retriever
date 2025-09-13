@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VWLUX",
+  "filing_date": "2025-05-20T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/225997/000168386325004754/f42100d1.htm",
+  "file_size": 75791,
+  "form_type": "497K",
+  "cik": "0000225997",
+  "accession_number": "0001683863-25-004754",
+  "download_timestamp": "2025-09-12T22:49:27.178557",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VWLUX/VWLUX_497K_20250520_000168386325004754.html",
+  "local_file_size": 75791,
+  "content_hash": "6c298e09715c1358d16267f7cc0458b2dcbf5e3886dec62848e664d44e0fd3cb"
+}

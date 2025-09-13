@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VINEX",
+  "filing_date": "2025-02-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1004655/000168386325001475/f40876d1.htm",
+  "file_size": 105944,
+  "form_type": "497K",
+  "cik": "0001004655",
+  "accession_number": "0001683863-25-001475",
+  "download_timestamp": "2025-09-12T22:38:45.723798",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VINEX/VINEX_497K_20250228_000168386325001475.html",
+  "local_file_size": 105944,
+  "content_hash": "7d9aa0796c55ef57b31216294675ce382da5448e6389078a824c4b9aafde153e"
+}

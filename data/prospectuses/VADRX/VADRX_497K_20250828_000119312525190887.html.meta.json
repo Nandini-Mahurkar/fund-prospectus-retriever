@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VADRX",
+  "filing_date": "2025-08-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1112996/000119312525190887/d38174d497k.htm",
+  "file_size": 101998,
+  "form_type": "497K",
+  "cik": "0001112996",
+  "accession_number": "0001193125-25-190887",
+  "download_timestamp": "2025-09-12T22:31:43.623301",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VADRX/VADRX_497K_20250828_000119312525190887.html",
+  "local_file_size": 101998,
+  "content_hash": "0d39efe577910c6b99b2b6f1603f07610e600d6671e3fbb0b1e3c490aea1fefb"
+}

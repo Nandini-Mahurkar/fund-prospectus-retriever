@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VHIAX",
+  "filing_date": "2025-01-30T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/803747/000119312525016703/d882709d497k.htm",
+  "file_size": 6899,
+  "form_type": "497K",
+  "cik": "0000803747",
+  "accession_number": "0001193125-25-016703",
+  "download_timestamp": "2025-09-12T22:37:45.520374",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VHIAX/VHIAX_497K_20250130_000119312525016703.html",
+  "local_file_size": 6899,
+  "content_hash": "776a9a2b30e1be804f30a89b92a9e5b2c9956abaacbbd9e3ac5af670139ee586"
+}

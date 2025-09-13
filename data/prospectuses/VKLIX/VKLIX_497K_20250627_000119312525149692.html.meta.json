@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VKLIX",
+  "filing_date": "2025-06-27T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/909466/000119312525149692/d800724d497k.htm",
+  "file_size": 228185,
+  "form_type": "497K",
+  "cik": "0000909466",
+  "accession_number": "0001193125-25-149692",
+  "download_timestamp": "2025-09-12T22:39:28.216747",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VKLIX/VKLIX_497K_20250627_000119312525149692.html",
+  "local_file_size": 228185,
+  "content_hash": "f4171d6b47a2ebd1692a0bcd634dc1f8a475f78f1f5607cccab4143cddf4783f"
+}

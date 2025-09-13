@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VAAGX",
+  "filing_date": "2025-06-18T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/867297/000093041325002000/c113040_497k.htm",
+  "file_size": 115598,
+  "form_type": "497K",
+  "cik": "0000867297",
+  "accession_number": "0000930413-25-002000",
+  "download_timestamp": "2025-09-12T22:28:16.706268",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VAAGX/VAAGX_497K_20250618_000093041325002000.html",
+  "local_file_size": 115598,
+  "content_hash": "bf461a73d196f49e5869163a7ca07eecf2cad0896ad3aeca7b2aa0714101a17c"
+}

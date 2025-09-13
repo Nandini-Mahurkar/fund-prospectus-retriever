@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VRSCX",
+  "filing_date": "2025-04-30T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/916403/000168386325004247/f41863d1.htm",
+  "file_size": 277490,
+  "form_type": "497K",
+  "cik": "0000916403",
+  "accession_number": "0001683863-25-004247",
+  "download_timestamp": "2025-09-12T22:43:43.679173",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VRSCX/VRSCX_497K_20250430_000168386325004247.html",
+  "local_file_size": 277490,
+  "content_hash": "d14b3136a9a9d90b30d749a06bace38eec5084cb5d76dbf1e131b0e2ebea160a"
+}

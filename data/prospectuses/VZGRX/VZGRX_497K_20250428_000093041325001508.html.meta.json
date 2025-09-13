@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VZGRX",
+  "filing_date": "2025-04-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1018593/000093041325001508/c112459_497k.htm",
+  "file_size": 115199,
+  "form_type": "497K",
+  "cik": "0001018593",
+  "accession_number": "0000930413-25-001508",
+  "download_timestamp": "2025-09-12T22:50:39.819541",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VZGRX/VZGRX_497K_20250428_000093041325001508.html",
+  "local_file_size": 115199,
+  "content_hash": "db1ca279c6ccd0d9dcad58ef5178be65816df34ff425afdb900cfb802afcbba2"
+}

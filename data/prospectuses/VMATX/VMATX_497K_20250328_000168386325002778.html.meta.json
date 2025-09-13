@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VMATX",
+  "filing_date": "2025-03-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1070414/000168386325002778/f41132d1.htm",
+  "file_size": 96959,
+  "form_type": "497K",
+  "cik": "0001070414",
+  "accession_number": "0001683863-25-002778",
+  "download_timestamp": "2025-09-12T22:40:44.919287",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VMATX/VMATX_497K_20250328_000168386325002778.html",
+  "local_file_size": 96959,
+  "content_hash": "a87feb0a58ea3062d49d1baa70c7fd27933c973205d1702d475174ecbbed8c7b"
+}

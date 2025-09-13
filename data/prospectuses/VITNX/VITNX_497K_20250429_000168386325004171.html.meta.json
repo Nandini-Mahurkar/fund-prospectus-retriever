@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VITNX",
+  "filing_date": "2025-04-29T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/862084/000168386325004171/f41630d1.htm",
+  "file_size": 114719,
+  "form_type": "497K",
+  "cik": "0000862084",
+  "accession_number": "0001683863-25-004171",
+  "download_timestamp": "2025-09-12T22:39:15.349803",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VITNX/VITNX_497K_20250429_000168386325004171.html",
+  "local_file_size": 114719,
+  "content_hash": "e7ac5fa0913b81f5a034056a8917ff0ae880f2acbc230663549d43cb6541e6b2"
+}

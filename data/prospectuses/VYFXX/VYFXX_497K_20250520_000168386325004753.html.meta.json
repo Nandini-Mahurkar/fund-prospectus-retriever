@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VYFXX",
+  "filing_date": "2025-05-20T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/788599/000168386325004753/f42109d1.htm",
+  "file_size": 74073,
+  "form_type": "497K",
+  "cik": "0000788599",
+  "accession_number": "0001683863-25-004753",
+  "download_timestamp": "2025-09-12T22:49:59.286126",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VYFXX/VYFXX_497K_20250520_000168386325004753.html",
+  "local_file_size": 74073,
+  "content_hash": "2ae373d0778298873a63bb160a3e7bd70871a61782b67b9366d01fc2177d58d5"
+}

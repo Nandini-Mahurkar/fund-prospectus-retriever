@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VFIDX",
+  "filing_date": "2025-05-29T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/106444/000168386325004877/f42131d1.htm",
+  "file_size": 116943,
+  "form_type": "497K",
+  "cik": "0000106444",
+  "accession_number": "0001683863-25-004877",
+  "download_timestamp": "2025-09-12T22:35:51.813787",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VFIDX/VFIDX_497K_20250529_000168386325004877.html",
+  "local_file_size": 116943,
+  "content_hash": "9ca5e86358db23428d128fcf8380459cece5a7e5054ba31abf6ed70ff1db92d1"
+}

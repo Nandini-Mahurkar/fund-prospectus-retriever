@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VRVIX",
+  "filing_date": "2025-03-04T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1021882/000168386325001706/f40917d1.htm",
+  "file_size": 115705,
+  "form_type": "497K",
+  "cik": "0001021882",
+  "accession_number": "0001683863-25-001706",
+  "download_timestamp": "2025-09-12T22:43:55.534549",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VRVIX/VRVIX_497K_20250304_000168386325001706.html",
+  "local_file_size": 115705,
+  "content_hash": "302fa233bf500705fd35c0cd6aa22131d991c682857f0ad4cb06de15c162bf1d"
+}

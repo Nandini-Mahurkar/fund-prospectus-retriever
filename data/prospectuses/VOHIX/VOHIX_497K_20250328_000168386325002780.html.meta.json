@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VOHIX",
+  "filing_date": "2025-03-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/862341/000168386325002780/f41130d1.htm",
+  "file_size": 95810,
+  "form_type": "497K",
+  "cik": "0000862341",
+  "accession_number": "0001683863-25-002780",
+  "download_timestamp": "2025-09-12T22:42:33.701256",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VOHIX/VOHIX_497K_20250328_000168386325002780.html",
+  "local_file_size": 95810,
+  "content_hash": "0be961e220e156efe73be9e45f9b86f31730272df4d34f13d2fcdb044323ffab"
+}

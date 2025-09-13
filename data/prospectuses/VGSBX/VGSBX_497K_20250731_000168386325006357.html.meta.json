@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VGSBX",
+  "filing_date": "2025-07-31T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1090682/000168386325006357/f42597d1.htm",
+  "file_size": 168878,
+  "form_type": "497K",
+  "cik": "0001090682",
+  "accession_number": "0001683863-25-006357",
+  "download_timestamp": "2025-09-12T22:37:23.610010",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VGSBX/VGSBX_497K_20250731_000168386325006357.html",
+  "local_file_size": 168878,
+  "content_hash": "4d86f581e9df1fce5a67388deb5bf47417217777fca5ef61e6d6ef0afae18b6b"
+}

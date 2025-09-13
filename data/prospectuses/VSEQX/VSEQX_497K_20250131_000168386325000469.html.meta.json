@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VSEQX",
+  "filing_date": "2025-01-31T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/932471/000168386325000469/f40502d1.htm",
+  "file_size": 82544,
+  "form_type": "497K",
+  "cik": "0000932471",
+  "accession_number": "0001683863-25-000469",
+  "download_timestamp": "2025-09-12T22:44:21.190487",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VSEQX/VSEQX_497K_20250131_000168386325000469.html",
+  "local_file_size": 82544,
+  "content_hash": "dc737c9971fe05f0b45ef5e00ced161c1cc3097ab5d563ac0d37bba7c5dbd9de"
+}

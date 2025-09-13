@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VICEX",
+  "filing_date": "2025-08-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1644419/000158064225005569/mainbuywrite_497k.htm",
+  "file_size": 59678,
+  "form_type": "497K",
+  "cik": "0001644419",
+  "accession_number": "0001580642-25-005569",
+  "download_timestamp": "2025-09-12T22:38:05.186654",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VICEX/VICEX_497K_20250828_000158064225005569.html",
+  "local_file_size": 59678,
+  "content_hash": "a36ac17b0b051baf0ac523d6eb70afb044f25bf330050ff46b1a1fff972b940b"
+}

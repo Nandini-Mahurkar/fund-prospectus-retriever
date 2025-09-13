@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VGHRX",
+  "filing_date": "2025-08-29T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/895430/000089543025000006/f42752d1.htm",
+  "file_size": 246014,
+  "form_type": "497K",
+  "cik": "0000895430",
+  "accession_number": "0000895430-25-000006",
+  "download_timestamp": "2025-09-12T22:36:50.259515",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VGHRX/VGHRX_497K_20250829_000089543025000006.html",
+  "local_file_size": 246014,
+  "content_hash": "7d8548e9166f93e58c00af9924f56d7dcd443af15ade183da57ac3a087a40929"
+}

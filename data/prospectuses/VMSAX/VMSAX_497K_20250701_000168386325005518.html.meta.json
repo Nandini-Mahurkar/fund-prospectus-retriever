@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VMSAX",
+  "filing_date": "2025-07-01T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/836906/000168386325005518/f42334d1.htm",
+  "file_size": 60921,
+  "form_type": "497K",
+  "cik": "0000836906",
+  "accession_number": "0001683863-25-005518",
+  "download_timestamp": "2025-09-12T22:41:33.005926",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VMSAX/VMSAX_497K_20250701_000168386325005518.html",
+  "local_file_size": 60921,
+  "content_hash": "ad88c99c03310ce50d84f8d308d6a4ffbeb9de30f28be1b34d1c951ea6e77d24"
+}

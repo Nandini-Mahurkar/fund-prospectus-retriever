@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VLAAX",
+  "filing_date": "2025-05-01T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/904170/000110465925042879/tm253886d6_497k.htm",
+  "file_size": 105499,
+  "form_type": "497K",
+  "cik": "0000904170",
+  "accession_number": "0001104659-25-042879",
+  "download_timestamp": "2025-09-12T22:39:49.317943",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VLAAX/VLAAX_497K_20250501_000110465925042879.html",
+  "local_file_size": 105499,
+  "content_hash": "25bf3b71987ebe1945ebb3b3b1fffbe46de2b92f912c31abf3a61fd7169de5e7"
+}

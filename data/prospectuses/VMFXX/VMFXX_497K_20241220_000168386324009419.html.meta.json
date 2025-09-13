@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VMFXX",
+  "filing_date": "2024-12-20T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/106830/000168386324009419/f40190d1.htm",
+  "file_size": 77465,
+  "form_type": "497K",
+  "cik": "0000106830",
+  "accession_number": "0001683863-24-009419",
+  "download_timestamp": "2025-09-12T22:41:03.094323",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VMFXX/VMFXX_497K_20241220_000168386324009419.html",
+  "local_file_size": 77465,
+  "content_hash": "474a86ef95656cf9492eb19fbed7f328dbaef94ec8d1f5f5d60400442d6368b2"
+}

@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VARTX",
+  "filing_date": "2018-04-30T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1004658/000114420418023560/tv490337_497k.htm",
+  "file_size": 174683,
+  "form_type": "497K",
+  "cik": "0001004658",
+  "accession_number": "0001144204-18-023560",
+  "download_timestamp": "2025-09-12T22:32:23.207053",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VARTX/VARTX_497K_20180430_000114420418023560.html",
+  "local_file_size": 174683,
+  "content_hash": "a51b995bbc9e1753065043185a0e8edbbe47db0d069b7095ec61ebb4eeee1043"
+}

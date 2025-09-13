@@ -154,7 +154,8 @@ class FileHandler:
                 summary_data = {
                     'downloads': [],
                     'last_updated': None,
-                    'total_downloads': 0
+                    'total_downloads': 0,
+                    'checkpoints_completed': []
                 }
             
             # Add new entry
@@ -165,12 +166,19 @@ class FileHandler:
                 'form_type': prospectus_data.form_type,
                 'file_path': str(file_path.relative_to(self.prospectus_dir)),
                 'file_size': file_path.stat().st_size,
-                'success': True
+                'success': True,
+                'document_type': prospectus_data.document_type,
+                'cik': prospectus_data.cik,
+                'accession_number': prospectus_data.accession_number
             }
             
             summary_data['downloads'].append(summary_entry)
             summary_data['last_updated'] = datetime.now().isoformat()
             summary_data['total_downloads'] = len(summary_data['downloads'])
+            
+            # Track checkpoint completion
+            if 'checkpoints_completed' not in summary_data:
+                summary_data['checkpoints_completed'] = []
             
             # Keep only the most recent 1000 entries to prevent file from growing too large
             if len(summary_data['downloads']) > 1000:
@@ -184,6 +192,176 @@ class FileHandler:
             
         except Exception as e:
             self.logger.error(f"Error updating summary log: {str(e)}")
+    
+    def update_checkpoint_completion(self, checkpoint: str, stats: dict):
+        """Update summary log with checkpoint completion information"""
+        try:
+            summary_log_path = self.prospectus_dir / 'download_summary.json'
+            
+            # Load existing summary
+            if summary_log_path.exists():
+                with open(summary_log_path, 'r', encoding='utf-8') as f:
+                    summary_data = json.load(f)
+            else:
+                summary_data = {
+                    'downloads': [],
+                    'last_updated': None,
+                    'total_downloads': 0,
+                    'checkpoints_completed': []
+                }
+            
+            # Add checkpoint completion info
+            checkpoint_entry = {
+                'checkpoint': checkpoint,
+                'completion_timestamp': datetime.now().isoformat(),
+                'statistics': stats
+            }
+            
+            # Remove any existing entry for this checkpoint
+            summary_data['checkpoints_completed'] = [
+                cp for cp in summary_data.get('checkpoints_completed', [])
+                if cp.get('checkpoint') != checkpoint
+            ]
+            
+            summary_data['checkpoints_completed'].append(checkpoint_entry)
+            summary_data['last_updated'] = datetime.now().isoformat()
+            
+            # Save updated summary
+            with open(summary_log_path, 'w', encoding='utf-8') as f:
+                json.dump(summary_data, f, indent=2, ensure_ascii=False)
+            
+            self.logger.info(f"Updated checkpoint completion for: {checkpoint}")
+            
+        except Exception as e:
+            self.logger.error(f"Error updating checkpoint completion: {str(e)}")
+    
+    def get_batch_summary_stats(self) -> dict:
+        """Get summary statistics for all downloaded prospectuses"""
+        try:
+            summary_log_path = self.prospectus_dir / 'download_summary.json'
+            
+            if not summary_log_path.exists():
+                return {'total_downloads': 0, 'unique_funds': 0, 'checkpoints_completed': []}
+            
+            with open(summary_log_path, 'r', encoding='utf-8') as f:
+                summary_data = json.load(f)
+            
+            downloads = summary_data.get('downloads', [])
+            
+            # Calculate statistics
+            total_downloads = len(downloads)
+            unique_funds = len(set(d.get('fund_symbol') for d in downloads if d.get('fund_symbol')))
+            
+            # Form type distribution
+            form_types = {}
+            for download in downloads:
+                form_type = download.get('form_type')
+                if form_type:
+                    form_types[form_type] = form_types.get(form_type, 0) + 1
+            
+            # Document type distribution
+            doc_types = {}
+            for download in downloads:
+                doc_type = download.get('document_type')
+                if doc_type:
+                    doc_types[doc_type] = doc_types.get(doc_type, 0) + 1
+            
+            # Total file size
+            total_size = sum(d.get('file_size', 0) for d in downloads)
+            
+            return {
+                'total_downloads': total_downloads,
+                'unique_funds': unique_funds,
+                'total_size_bytes': total_size,
+                'form_type_distribution': form_types,
+                'document_type_distribution': doc_types,
+                'checkpoints_completed': summary_data.get('checkpoints_completed', []),
+                'last_updated': summary_data.get('last_updated')
+            }
+            
+        except Exception as e:
+            self.logger.error(f"Error getting batch summary stats: {str(e)}")
+            return {'total_downloads': 0, 'unique_funds': 0, 'checkpoints_completed': []}
+    
+    def generate_batch_report(self, output_file: str = None) -> str:
+        """Generate a comprehensive batch processing report"""
+        try:
+            stats = self.get_batch_summary_stats()
+            
+            report_lines = [
+                "# Fund Prospectus Retrieval Report",
+                f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+                "",
+                "## Summary Statistics",
+                f"- Total prospectuses downloaded: {stats['total_downloads']:,}",
+                f"- Unique fund symbols: {stats['unique_funds']:,}",
+                f"- Total data size: {self._format_file_size_mb(stats.get('total_size_bytes', 0))}",
+                f"- Last updated: {stats.get('last_updated', 'N/A')}",
+                ""
+            ]
+            
+            # Checkpoints completed
+            if stats.get('checkpoints_completed'):
+                report_lines.extend([
+                    "## Checkpoints Completed",
+                    ""
+                ])
+                for checkpoint in stats['checkpoints_completed']:
+                    checkpoint_name = checkpoint.get('checkpoint', 'Unknown')
+                    completion_time = checkpoint.get('completion_timestamp', 'Unknown')
+                    checkpoint_stats = checkpoint.get('statistics', {})
+                    
+                    report_lines.extend([
+                        f"### {checkpoint_name}",
+                        f"- Completed: {completion_time}",
+                        f"- Success rate: {checkpoint_stats.get('success_rate', 0):.1f}%",
+                        f"- Successful downloads: {checkpoint_stats.get('successful_downloads', 0)}",
+                        f"- Failed downloads: {checkpoint_stats.get('failed_downloads', 0)}",
+                        ""
+                    ])
+            
+            # Form type distribution
+            if stats.get('form_type_distribution'):
+                report_lines.extend([
+                    "## Form Type Distribution",
+                    ""
+                ])
+                for form_type, count in sorted(stats['form_type_distribution'].items()):
+                    report_lines.append(f"- {form_type}: {count:,} files")
+                report_lines.append("")
+            
+            # Document type distribution
+            if stats.get('document_type_distribution'):
+                report_lines.extend([
+                    "## Document Type Distribution",
+                    ""
+                ])
+                for doc_type, count in sorted(stats['document_type_distribution'].items()):
+                    report_lines.append(f"- {doc_type}: {count:,} files")
+                report_lines.append("")
+            
+            report_content = "\n".join(report_lines)
+            
+            # Save to file if requested
+            if output_file:
+                report_path = self.prospectus_dir / output_file
+                with open(report_path, 'w', encoding='utf-8') as f:
+                    f.write(report_content)
+                self.logger.info(f"Batch report saved to: {report_path}")
+            
+            return report_content
+            
+        except Exception as e:
+            self.logger.error(f"Error generating batch report: {str(e)}")
+            return f"Error generating report: {str(e)}"
+    
+    def _format_file_size_mb(self, size_bytes: int) -> str:
+        """Format file size in human-readable format"""
+        for unit in ['B', 'KB', 'MB', 'GB', 'TB']:
+            if size_bytes < 1024.0:
+                return f"{size_bytes:.1f} {unit}"
+            size_bytes /= 1024.0
+        return f"{size_bytes:.1f} TB"
     
     def get_existing_prospectus(self, fund_symbol: str, filing_date: datetime = None) -> Optional[Path]:
         """Check if a prospectus already exists for the given fund and date"""

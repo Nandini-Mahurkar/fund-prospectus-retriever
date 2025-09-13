@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VSGNX",
+  "filing_date": "2024-12-20T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/891190/000168386324009424/f40193d1.htm",
+  "file_size": 73782,
+  "form_type": "497K",
+  "cik": "0000891190",
+  "accession_number": "0001683863-24-009424",
+  "download_timestamp": "2025-09-12T22:44:36.235865",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VSGNX/VSGNX_497K_20241220_000168386324009424.html",
+  "local_file_size": 73782,
+  "content_hash": "5ff9eea331ec048b8f0d56f74c6f5c9319952cb0b9525e86f40874681d3a23cd"
+}

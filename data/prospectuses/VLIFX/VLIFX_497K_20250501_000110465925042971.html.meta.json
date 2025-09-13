@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VLIFX",
+  "filing_date": "2025-05-01T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/102756/000110465925042971/tm253226d8_497k.htm",
+  "file_size": 89811,
+  "form_type": "497K",
+  "cik": "0000102756",
+  "accession_number": "0001104659-25-042971",
+  "download_timestamp": "2025-09-12T22:40:08.765941",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VLIFX/VLIFX_497K_20250501_000110465925042971.html",
+  "local_file_size": 89811,
+  "content_hash": "40bf9c97383f821cb1798c225d4d898b9ac202f0f7833526926a40fcd79c6720"
+}

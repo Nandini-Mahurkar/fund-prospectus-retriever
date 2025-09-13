@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VYSEX",
+  "filing_date": "2025-08-29T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1063946/000106394625000017/f42751d1.htm",
+  "file_size": 382492,
+  "form_type": "497K",
+  "cik": "0001063946",
+  "accession_number": "0001063946-25-000017",
+  "download_timestamp": "2025-09-12T22:50:32.941774",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VYSEX/VYSEX_497K_20250829_000106394625000017.html",
+  "local_file_size": 382492,
+  "content_hash": "02bd3917ea46d8aed421d71cd158cce612d1b87c542e4a3510e3f75a3066e048"
+}

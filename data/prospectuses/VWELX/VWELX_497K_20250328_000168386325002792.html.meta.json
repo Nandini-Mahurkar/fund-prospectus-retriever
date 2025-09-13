@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VWELX",
+  "filing_date": "2025-03-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/105563/000168386325002792/f41211d1.htm",
+  "file_size": 98758,
+  "form_type": "497K",
+  "cik": "0000105563",
+  "accession_number": "0001683863-25-002792",
+  "download_timestamp": "2025-09-12T22:49:12.001405",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VWELX/VWELX_497K_20250328_000168386325002792.html",
+  "local_file_size": 98758,
+  "content_hash": "64cb3d39b82fd133a3bc542c6ed1d9aa46968d4b48d74c488a380c8abb2a7820"
+}

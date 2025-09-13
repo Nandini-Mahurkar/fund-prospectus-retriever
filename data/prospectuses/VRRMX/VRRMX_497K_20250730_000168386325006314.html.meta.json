@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VRRMX",
+  "filing_date": "2025-07-30T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1392116/000168386325006314/f42581d1.htm",
+  "file_size": 289300,
+  "form_type": "497K",
+  "cik": "0001392116",
+  "accession_number": "0001683863-25-006314",
+  "download_timestamp": "2025-09-12T22:43:37.129893",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VRRMX/VRRMX_497K_20250730_000168386325006314.html",
+  "local_file_size": 289300,
+  "content_hash": "923edb51e40ab1840a5edf6474b0c39951815f8d3d9270d068d1f1a15ada18b6"
+}

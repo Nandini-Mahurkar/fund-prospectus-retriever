@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VCADX",
+  "filing_date": "2025-03-28T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/783401/000168386325002788/f41218d1.htm",
+  "file_size": 43347,
+  "form_type": "497K",
+  "cik": "0000783401",
+  "accession_number": "0001683863-25-002788",
+  "download_timestamp": "2025-09-12T22:33:13.288839",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VCADX/VCADX_497K_20250328_000168386325002788.html",
+  "local_file_size": 43347,
+  "content_hash": "7316cb28bd56f52589c19ea086813aa681d5d3c6023c0f2bc10f7c2438fc9209"
+}

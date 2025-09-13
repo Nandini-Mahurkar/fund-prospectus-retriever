@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VOLMX",
+  "filing_date": "2025-04-25T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/792394/000137647425000387/vf_497k.htm",
+  "file_size": 43316,
+  "form_type": "497K",
+  "cik": "0000792394",
+  "accession_number": "0001376474-25-000387",
+  "download_timestamp": "2025-09-12T22:42:36.488887",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VOLMX/VOLMX_497K_20250425_000137647425000387.html",
+  "local_file_size": 43316,
+  "content_hash": "7ff3b0dd9e31aa23259b03dec03d4f0c7b0d8661deb4f93d317c41fe476cf2c7"
+}

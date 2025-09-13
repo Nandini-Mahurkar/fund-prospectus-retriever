@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VVICX",
+  "filing_date": "2025-08-29T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/1015965/000101596525000006/f42748d1.htm",
+  "file_size": 233621,
+  "form_type": "497K",
+  "cik": "0001015965",
+  "accession_number": "0001015965-25-000006",
+  "download_timestamp": "2025-09-12T22:48:23.252925",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VVICX/VVICX_497K_20250829_000101596525000006.html",
+  "local_file_size": 233621,
+  "content_hash": "91b2fb7c9632fa154e8a7f36847220feb2c5e6f655b8c3e2721b0750260e1218"
+}

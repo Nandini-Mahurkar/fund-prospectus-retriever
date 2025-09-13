@@ -1,0 +1,14 @@
+{
+  "fund_symbol": "VTINX",
+  "filing_date": "2025-01-31T00:00:00",
+  "document_type": "HTML",
+  "source_url": "https://www.sec.gov/Archives/edgar/data/752177/000168386325000490/f40542d1.htm",
+  "file_size": 108732,
+  "form_type": "497K",
+  "cik": "0000752177",
+  "accession_number": "0001683863-25-000490",
+  "download_timestamp": "2025-09-12T22:46:46.238356",
+  "local_file_path": "/Users/dini/Documents/atomic_assessment/fund-prospectus-retriever/data/prospectuses/VTINX/VTINX_497K_20250131_000168386325000490.html",
+  "local_file_size": 108732,
+  "content_hash": "5f670670ddfb630cf5d4231b2da50592ded21afacf90aa750ca03c6a625a5946"
+}
